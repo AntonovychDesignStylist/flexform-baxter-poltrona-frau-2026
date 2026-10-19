@@ -307,3 +307,19 @@ html,body{background:var(--bg)}
 #grid .g-text .logo-mark{width:60%;margin:0 auto}
 .subs-ru{color:var(--white)}
 
+
+/* ─── Фото на белом листе: кадр по центру ~64% высоты экрана, поля со всех сторон ─── */
+.frame.photo{inset:18vh 15vw;padding:0}
+.frame.photo.pair{inset:18vh 8vw;padding:0;gap:clamp(16px,2vw,40px)}
+.frame.photo.small{inset:29vh 27vw}            /* файлы с малым разрешением — ещё меньше */
+.frame.photo img{transform:none;transition:none}
+@media (orientation:portrait){
+  .frame.photo,.frame.photo.small{inset:22vh 5vw}
+  .frame.photo.pair{inset:14vh 5vw}
+}
+
+/* текстовый слайд с короткими строками (Библиотека материалов) — мелкий шрифт на белом */
+.text-slide .kicker{font-family:var(--sans);font-weight:300;text-transform:uppercase;letter-spacing:.24em;text-indent:.24em;color:var(--grey);font-size:clamp(10px,.75vw,13px);margin-bottom:2.2em}
+.text-slide .lines{margin-top:clamp(36px,6vh,64px);display:flex;flex-direction:column;gap:.9em}
+.text-slide .lines span{font-family:var(--sans);font-weight:300;color:var(--white);font-size:clamp(14px,1.05vw,19px);letter-spacing:.01em;line-height:1.5}
+.frame.photo.pair img{width:auto;height:100%;max-width:calc(50% - 1vw);object-fit:contain}

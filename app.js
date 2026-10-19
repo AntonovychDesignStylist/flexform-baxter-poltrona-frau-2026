@@ -84,7 +84,7 @@
 
     } else if (s.type === 'photo' || s.type === 'pair') {
       var f = document.createElement('div');
-      f.className = 'frame' + (s.type === 'pair' ? ' pair' : '');
+      f.className = 'frame photo' + (s.type === 'pair' ? ' pair' : '') + (s.small ? ' small' : '');
       var list = s.type === 'pair' ? s.src : [s.src];
       list.forEach(function (src) {
         var img = document.createElement('img');
