@@ -5,7 +5,8 @@ window.SLIDES = [
  {
   "type": "text",
   "logo": true,
-  "year": "2026"
+  "title": "The Private Lives of Objects",
+  "sub": "Milan Design Week 2026"
  },
  {
   "type": "photo",
@@ -32,7 +33,7 @@ window.SLIDES = [
  },
  {
   "type": "text",
-  "title": "The Private Lives of Objects"
+  "title": "Неделя дизайна в Милане"
  },
  {
   "type": "pair",
@@ -47,7 +48,8 @@ window.SLIDES = [
  },
  {
   "type": "text",
-  "title": "Quincy"
+  "title": "Quincy",
+  "sub": "Antonio Citterio"
  },
  {
   "type": "photo",
@@ -66,7 +68,8 @@ window.SLIDES = [
  },
  {
   "type": "text",
-  "title": "Marquis · Ozzy"
+  "title": "Marquis · Ozzy",
+  "sub": "Antonio Citterio · Patrick Norguet"
  },
  {
   "type": "photo",
@@ -103,7 +106,8 @@ window.SLIDES = [
  },
  {
   "type": "text",
-  "title": "Loungescape"
+  "title": "Loungescape",
+  "sub": "Antonio Citterio"
  },
  {
   "type": "photo",
@@ -126,7 +130,8 @@ window.SLIDES = [
  },
  {
   "type": "text",
-  "title": "Tara · Justine"
+  "title": "Tara · Justine",
+  "sub": "Sebastian Herkner · Antonio Citterio"
  },
  {
   "type": "photo",
@@ -167,7 +172,8 @@ window.SLIDES = [
  },
  {
   "type": "text",
-  "title": "Everett Outdoor"
+  "title": "Everett Outdoor",
+  "sub": "Antonio Citterio"
  },
  {
   "type": "photo",
@@ -214,7 +220,8 @@ window.SLIDES = [
  },
  {
   "type": "text",
-  "title": "Margherì"
+  "title": "Margherì",
+  "sub": "Monica Armani"
  },
  {
   "type": "photo",
@@ -258,7 +265,8 @@ window.SLIDES = [
  },
  {
   "type": "text",
-  "title": "Oasis"
+  "title": "Oasis",
+  "sub": "Antonio Citterio"
  },
  {
   "type": "photo",
@@ -301,7 +309,6 @@ window.SLIDES = [
  },
  {
   "type": "text",
-  "logo": true,
-  "year": "2026"
+  "logo": true
  }
 ];

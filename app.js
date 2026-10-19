@@ -3,7 +3,7 @@
   'use strict';
 
   var S = window.SLIDES || [];
-  var WORD = '<span class="logo-word">FLEXFORM</span>';
+  var WORD = '<img class="logo-mark" src="media/img/flexform-logo.webp" alt="Flexform">';
   function brand(t) { return String(t); }
   var stage = document.getElementById('stage');
   var grid = document.getElementById('grid');
