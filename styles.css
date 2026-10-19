@@ -284,8 +284,8 @@ body{font-family:var(--sans);-webkit-font-smoothing:antialiased}
   --serif:'Cormorant','Cormorant Garamond',Georgia,'Times New Roman',serif;
 }
 html,body{background:var(--bg)}
-.frame{inset:clamp(44px,9vh,110px) clamp(56px,10vw,220px)}
-.frame.pair{padding:0;gap:clamp(18px,2.2vw,40px)}
+.frame{inset:0}                                  /* кадр на весь экран 16:9 */
+.frame.pair{padding:clamp(20px,3vh,40px) clamp(20px,2vw,40px);gap:clamp(14px,1.6vw,30px)}
 .frame.pair img{width:50%;height:100%;object-fit:contain}
 .frame video{background:var(--bg)}
 
@@ -306,4 +306,4 @@ html,body{background:var(--bg)}
 #grid .g-text{color:var(--white);font-family:var(--serif);text-transform:none;letter-spacing:0;font-size:15px}
 #grid .g-text .logo-mark{width:60%;margin:0 auto}
 .subs-ru{color:var(--white)}
-@media (max-width:760px){ .frame{inset:28px 18px} }
+
