@@ -98,7 +98,7 @@
 
     } else if (s.type === 'video') {
       var fv = document.createElement('div');
-      fv.className = 'frame';
+      fv.className = 'frame vid' + (s.portrait ? ' vid-portrait' : '');
       var v = document.createElement('video');
       v.src = s.src;
       v.poster = s.poster || '';

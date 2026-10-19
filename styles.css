@@ -323,3 +323,9 @@ html,body{background:var(--bg)}
 .text-slide .lines{margin-top:clamp(36px,6vh,64px);display:flex;flex-direction:column;gap:.9em}
 .text-slide .lines span{font-family:var(--sans);font-weight:300;color:var(--white);font-size:clamp(14px,1.05vw,19px);letter-spacing:.01em;line-height:1.5}
 .frame.photo.pair img{width:auto;height:100%;max-width:calc(50% - 1vw);object-fit:contain}
+
+/* ─── Видео: белые поля вокруг кадра, чтобы было видно, что кадр целиком в экране ─── */
+.frame.vid{inset:8vh 8vw}
+.frame.vid.vid-portrait{inset:6vh 8vw}
+.frame.vid video{background:transparent}
+@media (orientation:portrait){ .frame.vid,.frame.vid.vid-portrait{inset:12vh 4vw} }
