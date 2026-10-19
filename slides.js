@@ -205,6 +205,16 @@ window.SLIDES = [
  },
  {
   "type": "text",
+  "title": "Groundpiece",
+  "sub": "Antonio Citterio"
+ },
+ {
+  "type": "video",
+  "src": "media/video/groundpiece-film.mp4",
+  "poster": "media/video/groundpiece-film_poster.jpg"
+ },
+ {
+  "type": "text",
   "title": "Сант-Анджело"
  },
  {
