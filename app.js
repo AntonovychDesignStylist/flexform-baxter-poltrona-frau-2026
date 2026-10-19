@@ -84,7 +84,7 @@
 
     } else if (s.type === 'photo' || s.type === 'pair') {
       var f = document.createElement('div');
-      f.className = 'frame photo' + (s.type === 'pair' ? ' pair' : '') + (s.small ? ' small' : '');
+      f.className = 'frame photo' + (s.type === 'pair' ? ' pair' : '') + (s.small ? ' small' : '') + (s.medium ? ' medium' : '');
       var list = s.type === 'pair' ? s.src : [s.src];
       list.forEach(function (src) {
         var img = document.createElement('img');
@@ -95,6 +95,12 @@
         f.appendChild(img);
       });
       el.appendChild(f);
+      if (s.label) {
+        var lb = document.createElement('div');
+        lb.className = 'photo-label';
+        lb.textContent = s.label;
+        el.appendChild(lb);
+      }
 
     } else if (s.type === 'video') {
       var fv = document.createElement('div');

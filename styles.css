@@ -329,3 +329,9 @@ html,body{background:var(--bg)}
 .frame.vid.vid-portrait{inset:5vh 6vw}
 .frame.vid video{background:transparent}
 @media (orientation:portrait){ .frame.vid,.frame.vid.vid-portrait{inset:12vh 4vw} }
+
+/* кадры среднего разрешения — чуть меньше, чтобы не терять резкость */
+.frame.photo.medium{inset:10vh 13vw}
+/* отметка года/места под кадром */
+.photo-label{position:absolute;left:0;right:0;bottom:2.2vh;text-align:center;font-family:var(--sans);font-weight:300;
+  text-transform:uppercase;letter-spacing:.24em;text-indent:.24em;color:var(--grey);font-size:clamp(9px,.7vw,12px)}

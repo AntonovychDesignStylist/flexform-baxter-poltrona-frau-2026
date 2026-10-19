@@ -183,6 +183,28 @@ window.SLIDES = [
  },
  {
   "type": "text",
+  "title": "Милан 2025",
+  "sub": "Flexform · Milan Design Week 2025"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/MI25_cover.webp",
+  "label": "Милан 2025"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/MI25_2.webp",
+  "label": "Милан 2025",
+  "medium": true
+ },
+ {
+  "type": "photo",
+  "src": "media/img/MI25_1.webp",
+  "label": "Милан 2025",
+  "medium": true
+ },
+ {
+  "type": "text",
   "title": "Сант-Анджело"
  },
  {
