@@ -309,9 +309,9 @@ html,body{background:var(--bg)}
 
 
 /* ─── Фото на белом листе: кадр по центру ~64% высоты экрана, поля со всех сторон ─── */
-.frame.photo{inset:18vh 15vw;padding:0}
-.frame.photo.pair{inset:18vh 8vw;padding:0;gap:clamp(16px,2vw,40px)}
-.frame.photo.small{inset:29vh 27vw}            /* файлы с малым разрешением — ещё меньше */
+.frame.photo{inset:6vh 6vw;padding:0}
+.frame.photo.pair{inset:6vh 5vw;padding:0;gap:clamp(16px,2vw,40px)}
+.frame.photo.small{inset:24vh 24vw}            /* файлы с малым разрешением — ещё меньше */
 .frame.photo img{transform:none;transition:none}
 @media (orientation:portrait){
   .frame.photo,.frame.photo.small{inset:22vh 5vw}
@@ -325,7 +325,7 @@ html,body{background:var(--bg)}
 .frame.photo.pair img{width:auto;height:100%;max-width:calc(50% - 1vw);object-fit:contain}
 
 /* ─── Видео: белые поля вокруг кадра, чтобы было видно, что кадр целиком в экране ─── */
-.frame.vid{inset:8vh 8vw}
-.frame.vid.vid-portrait{inset:6vh 8vw}
+.frame.vid{inset:6vh 6vw}
+.frame.vid.vid-portrait{inset:5vh 6vw}
 .frame.vid video{background:transparent}
 @media (orientation:portrait){ .frame.vid,.frame.vid.vid-portrait{inset:12vh 4vw} }

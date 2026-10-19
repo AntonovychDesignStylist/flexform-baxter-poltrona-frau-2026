@@ -132,6 +132,21 @@ window.SLIDES = [
   "src": "media/img/S6_09_I_28.webp"
  },
  {
+  "type": "photo",
+  "src": "media/img/LS_adv_header.webp"
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/LS_adv_g5.webp",
+   "media/img/LS_adv_g4.webp"
+  ]
+ },
+ {
+  "type": "photo",
+  "src": "media/img/LS_adv_g3.webp"
+ },
+ {
   "type": "text",
   "title": "Tara · Justine",
   "sub": "Sebastian Herkner · Antonio Citterio"
