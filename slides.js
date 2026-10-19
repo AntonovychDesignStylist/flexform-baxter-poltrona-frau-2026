@@ -38,11 +38,12 @@ window.SLIDES = [
   "title": "Неделя дизайна в Милане"
  },
  {
-  "type": "pair",
-  "src": [
-   "media/img/u_brera_entrance.webp",
-   "media/img/01_72A_O_.webp"
-  ]
+  "type": "photo",
+  "src": "media/img/u_brera_entrance.webp"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/01_72A_O_.webp"
  },
  {
   "type": "text",
