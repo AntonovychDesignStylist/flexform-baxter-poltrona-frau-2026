@@ -188,7 +188,7 @@ body{font-family:var(--sans);-webkit-font-smoothing:antialiased}
   transition:opacity 800ms var(--ease)}
 #hint.gone{opacity:0}
 
-@media (max-width:760px){
+@media (max-width:760px) and (orientation:portrait){
   .frame.pair{flex-direction:column;gap:10px;padding:16px 14px}
   .frame.pair img{width:100%;height:50%}
   .text-slide{padding:0 26px}
@@ -270,3 +270,32 @@ body{font-family:var(--sans);-webkit-font-smoothing:antialiased}
 .logo-word{display:inline-block;font-family:var(--sans);font-weight:500;letter-spacing:.42em;text-indent:.42em;
   color:var(--white);font-size:clamp(30px,4.2vw,64px);line-height:1}
 .cover .wordmark .logo-word{font-size:clamp(22px,2.4vw,36px)}
+
+/* ─── Flexform: светлая тема — белый лист, тёплый серо-коричневый текст, воздух ─── */
+:root{
+  --bg:#FFFFFF; --bg2:#F4F1EC;
+  --white:#6B5B4E;          /* основной текст — тёплый коричнево-серый */
+  --grey:#A0968C; --grey-dim:#BDB5AD;
+  --hair:rgba(107,91,78,.22);
+}
+html,body{background:var(--bg)}
+/* кадры стоят на белом с щедрыми полями */
+.frame{inset:clamp(44px,9vh,110px) clamp(56px,10vw,220px)}
+.frame.pair{padding:0;gap:clamp(18px,2.2vw,40px)}
+.frame.pair img{width:50%;height:100%;object-fit:contain}
+.frame video{background:var(--bg)}
+/* заголовок-разделитель: одна строка в центре пустого листа */
+.text-slide .title{font-weight:300;color:var(--white);letter-spacing:.42em;text-indent:.42em;
+  font-size:clamp(18px,2.1vw,32px)}
+.text-slide .rule{display:none}
+.logo-word{color:var(--white);font-weight:400}
+.wordmark-text .year{color:var(--grey);opacity:1}
+#sound-toggle{border-color:rgba(107,91,78,.35);background:rgba(255,255,255,.75);color:var(--white)}
+#progress{background:rgba(107,91,78,.10)}
+#bar{background:rgba(107,91,78,.55)}
+#grid figure:hover{outline:1px solid rgba(107,91,78,.45)}
+#grid .g-text{color:var(--white)}
+.subs-ru{color:var(--white)}
+@media (max-width:760px){
+  .frame{inset:28px 18px}
+}

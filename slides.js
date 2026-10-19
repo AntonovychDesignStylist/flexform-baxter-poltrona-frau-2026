@@ -1,169 +1,307 @@
-/* Контент презентации Flexform 2026 · The Private Lives of Objects.
-   Правится здесь — код трогать не нужно.
-   type: text | photo | pair | video */
-
-var I = function (n) { return 'media/img/' + n + '.webp'; };
-var V = function (n, o) {
-  var s = { type: 'video', src: 'media/video/' + n + '.mp4', poster: 'media/video/' + n + '_poster.jpg' };
-  for (var k in (o || {})) s[k] = o[k];
-  return s;
-};
+/* Flexform 2026 · The Private Lives of Objects. Только заголовки и кадры.
+   Правится здесь — код трогать не нужно. type: text | photo | pair | video */
 
 window.SLIDES = [
- { type: 'text', logo: true, year: '2026', kicker: 'Milan Design Week',
-   lines: ['The Private Lives of Objects — «Частная жизнь предметов».',
-           'Семья из Брианцы, архитектор Антонио Читтерио и вещи, которые живут рядом с нами.'] },
- { type: 'photo', src: I('02_72A__HEADER_0') },
-
- /* Пролог */
- { type: 'text', kicker: 'Пролог', title: 'Диван с малыми шансами',
-   lines: ['2001 — Антонио Читтерио рисует Groundpiece: низкий, глубокий, модульный.',
-           'Через несколько месяцев он среди бестселлеров бренда.',
-           '2026 — Groundpiece исполняется 25 лет.'],
-   quotes: [{ who: 'Антонио Читтерио, архитектор',
-              ru: '«Когда мы его проектировали, идея казалась богатой по содержанию — с малыми шансами на успех».' }] },
-
- /* Часть первая */
- { type: 'text', kicker: 'Часть первая', title: 'Три брата из Брианцы',
-   lines: ['Начало XX века — обивочная мастерская семьи Галимберти.',
-           '1959 — братья Ромео, Пьетро и Агостино называют дело Flexform di Galimberti.',
-           'Их мебель уходит в миланские дома, на виллы Комо и в театр Ла Скала.',
-           '1967 — мастерская вырастает в фабрику. Она и сегодня одна — в Меде.',
-           'Вся цепочка мастеров — в радиусе нескольких километров.'] },
-
- /* Часть вторая */
- { type: 'text', kicker: 'Часть вторая', title: 'Дизайн с самого начала',
-   lines: ['1960-е — Джо Коломбо, Чини Боэри, Родольфо Бонетто.',
-           'Кресло Tube Коломбо и шезлонг Boomerang Бонетто — в коллекции MoMA.',
-           '1969 — знак бренда рисует Пино Товалья, автор логотипа Pirelli.',
-           '1985 — Flexform возвращает в производство коллекцию Moka 1939 года.',
-           'Рекламу снимают Габриэле Базилико и Джанни Беренго Гардин.'] },
-
- /* Часть третья */
- { type: 'text', kicker: 'Часть третья', title: 'Антонио Читтерио',
-   lines: ['Родился в Меде в 1950 году, студию открыл в 1972-м.',
-           'С 1970-х работает с Flexform — самое долгое сотрудничество в истории бренда.',
-           'Его формула — everyday elegance, элегантность на каждый день.',
-           'Подлокотник Groundpiece — оммаж художнику Дональду Джадду.'],
-   quotes: [{ who: 'Антонио Читтерио, архитектор', ru: '«Каждый диван — созвездие функций».' },
-            { who: 'Саул Галимберти, директор дизайн-центра Flexform',
-              ru: '«На сегодняшних диванах отдыхают, смотрят телевизор, читают, часто работают и даже ужинают».' }] },
-
- /* Часть четвёртая */
- { type: 'text', kicker: 'Часть четвёртая', title: 'Тихая роскошь',
-   lines: ['Мода живёт сезон. Вкус остаётся.',
-           'Палитра вполголоса: бежевый, песочный, сизый, тёплый серый.',
-           'Диван двадцатилетней давности и диван 2026 года шепчутся в одном тоне.',
-           'Самая прочная вещь — та, что становится частью памяти о доме.'] },
-
- /* Часть пятая */
- { type: 'text', kicker: 'Часть пятая', title: 'Compasso d’Oro ADI 2026',
-   lines: ['«Золотой циркуль» вручают с 1954 года — это старейшая премия в мире дизайна.',
-           '2026 — награду за вклад в отрасль получили Пьетро и Антонио Галимберти.',
-           'Жюри назвало Flexform одним из столпов «Made in Italy».',
-           'Награду они разделили со всеми, кто строит компанию.'],
-   quotes: [{ who: 'Из решения жюри ADI',
-              ru: '«Сдержанная и вневременная элегантность — внимание к материалам, гармония форм, забота о деталях».' }] },
- { type: 'photo', src: I('01_adi_Header') },
- { type: 'pair', src: [I('02_adi_3'), I('03_adi_4')] },
- { type: 'photo', src: I('04_adi_5') },
-
- /* Часть шестая · MDW26 */
- { type: 'text', kicker: 'Milan Design Week 2026', title: 'The Private Lives of Objects',
-   lines: ['«Частная жизнь предметов» — вещи как тихие свидетели наших дней.',
-           'Бренд называет их «конденсаторами памяти».',
-           'Дом — фирменный магазин Flexform в Брере.',
-           'Сад — дворик монастыря Сант-Анджело, архитектор Джованни Муцио.'] },
- { type: 'pair', src: [I('u_brera_entrance'), I('01_72A_O_')] },
- { type: 'text', kicker: 'Коллекция 2026', title: 'Новая глава',
-   lines: ['Диван — место для разговора. Стол собирает людей. Кресло — личное пространство.',
-           'Антонио Читтерио: диваны Quincy и Everett, столы Marquis, кресла Justine и Avalon, система хранения Clarence.',
-           'Quincy — пластика вместо строгой геометрии: плавные линии, пуховые подушки, точные пропорции.',
-           'Новые имена: Себастьян Херкнер, Патрик Норге, Фуми Шибата.'] },
-
- /* Дом · Брера */
- { type: 'text', kicker: 'Дом · Брера', title: 'Quincy',
-   lines: ['Quincy · модульный диван · Антонио Читтерио'] },
- { type: 'photo', src: I('S1_01_I__COVER') },
- { type: 'photo', src: I('S1_08_I_2') },
- { type: 'pair', src: [I('S1_09_I_3'), I('S1_10_I_4')] },
- { type: 'text', kicker: 'Дом · Брера', title: 'Marquis · Ozzy · Clarence',
-   lines: ['Marquis · стол · Антонио Читтерио',
-           'Ozzy · стулья-кресла · Патрик Норге',
-           'Clarence · низкий шкаф · Антонио Читтерио'] },
- { type: 'photo', src: I('S2_01_72A_3') },
- { type: 'photo', src: I('S2_12_I_8_COVER') },
- { type: 'pair', src: [I('S2_08_I_7'), I('S2_09_I_6')] },
- { type: 'pair', src: [I('S2_10_I_9'), I('S2_11_I_10')] },
- { type: 'photo', src: I('S3_09_72A_5') },
- { type: 'pair', src: [I('S3_07_I_11_COVER'), I('S3_08_I_13')] },
- { type: 'text', kicker: 'Дом · Брера', title: 'Loungescape Light · Loungescape',
-   lines: ['Loungescape Light · кровать · Антонио Читтерио',
-           'Loungescape · кровать · Антонио Читтерио'] },
- { type: 'photo', src: I('S4_01_72A_8') },
- { type: 'photo', src: I('S4_08_I_23') },
- { type: 'photo', src: I('S6_01_72A_10') },
- { type: 'pair', src: [I('S6_08_I_27'), I('S6_09_I_28')] },
- { type: 'text', kicker: 'Дом · Брера', title: 'Tara · Justine',
-   lines: ['Tara · стол · Себастьян Херкнер — его первая работа для Flexform',
-           'Justine · стулья-кресла · Антонио Читтерио'] },
- { type: 'photo', src: I('S5_01_72A_9') },
- { type: 'photo', src: I('S5_05_I_25') },
- { type: 'photo', src: I('u_brera_interior') },
- V('brera-tour', { portrait: true }),
- V('brera-cuts', { portrait: true }),
- V('home-film'),
-
- /* Сад · Сант-Анджело */
- { type: 'text', kicker: 'Сад · Сант-Анджело', title: 'Дворик монастыря',
-   lines: ['Монастырь Сант-Анджело построен по проекту миланского архитектора Джованни Муцио.',
-           'Между бордюрами с питтоспорумом и розмарином — новинки Антонио Читтерио, Моники Армани и Себастьяна Херкнера.'] },
- { type: 'photo', src: I('u_cloister') },
- { type: 'text', kicker: 'Сад · Сант-Анджело', title: 'Everett Outdoor',
-   lines: ['Everett Outdoor · модульный диван для сада · Антонио Читтерио',
-           'Металлический каркас и плетение — лёгкий фильтр между человеком и пространством.'] },
- { type: 'photo', src: I('S7_24_72A_11') },
- { type: 'photo', src: I('S7_17_I_32_COVER') },
- { type: 'pair', src: [I('S7_13_I_31'), I('S7_14_I_30')] },
- { type: 'pair', src: [I('S7_15_I_33'), I('S7_16_I_34')] },
- { type: 'pair', src: [I('S7_18_I_36'), I('S7_19_I_37')] },
- { type: 'pair', src: [I('S7_20_I_35_COVER'), I('S7_21_I_38_COVER')] },
- { type: 'pair', src: [I('S7_22_I_39'), I('S7_23_I_40')] },
- { type: 'text', kicker: 'Сад · Сант-Анджело', title: 'Margherì',
-   lines: ['Margherì · модульный диван для сада · Моника Армани',
-           'Коллекция приглашает к «блаженному безделью» — между тенью и светом.'] },
- { type: 'photo', src: I('S8_01_72A_15') },
- { type: 'photo', src: I('S8_11_I_45_COVER') },
- { type: 'pair', src: [I('u_garden_round'), I('u_garden_daybed')] },
- { type: 'pair', src: [I('S8_08_I_42'), I('S8_09_I_43')] },
- { type: 'pair', src: [I('S8_10_I_44'), I('S8_12_I_46')] },
- { type: 'pair', src: [I('S8_13_I_47'), I('S8_14_I_48_COVER')] },
- { type: 'photo', src: I('S8_15_I_49') },
- { type: 'text', kicker: 'Сад · Сант-Анджело', title: 'Oasis · Desco',
-   lines: ['Oasis · модульный диван для сада · Антонио Читтерио',
-           'Desco Outdoor · стол'] },
- { type: 'photo', src: I('S9_01_72A_18') },
- { type: 'photo', src: I('S9_14_I_53_COVER') },
- { type: 'pair', src: [I('S9_11_I_52'), I('S9_12_I_51')] },
- { type: 'photo', src: I('S9_13_I_54') },
- V('garden-tour', { portrait: true }),
- V('garden-film'),
-
- /* Часть седьмая */
- { type: 'text', kicker: 'Меда', title: 'Библиотека материалов',
-   lines: ['Шоурум в Меде — ровесник бренда, с 1959 года.',
-           'Больше 2 000 м²: от новинок до икон коллекции.',
-           'Библиотека материалов — рабочее место архитекторов и дизайнеров.',
-           'В центре — остров, где проект собирают прямо из образцов.'] },
- V('library-film'),
-
- /* Финал */
- { type: 'text', kicker: 'Flexform', title: 'От Меды до Сиднея',
-   lines: ['Фирменные магазины — Лондон, Сидней, Шанхай, Нью-Йорк, Сингапур, Токио.',
-           'Фабрика — одна, в Меде.',
-           'Во главе — третье поколение семьи.'] },
- { type: 'text', kicker: 'Antonovych Home', title: 'Вещи для жизни',
-   lines: ['Выбираем предметы по тому, как в них живётся.',
-           'Ценность вещи — в том, как естественно она входит в жизнь и как долго в ней остаётся.',
-           'Flexform раскрывается со временем.'] }
+ {
+  "type": "text",
+  "logo": true,
+  "year": "2026"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/02_72A__HEADER_0.webp"
+ },
+ {
+  "type": "text",
+  "title": "Compasso d’Oro 2026"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/01_adi_Header.webp"
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/02_adi_3.webp",
+   "media/img/03_adi_4.webp"
+  ]
+ },
+ {
+  "type": "photo",
+  "src": "media/img/04_adi_5.webp"
+ },
+ {
+  "type": "text",
+  "title": "The Private Lives of Objects"
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/u_brera_entrance.webp",
+   "media/img/01_72A_O_.webp"
+  ]
+ },
+ {
+  "type": "text",
+  "title": "Брера"
+ },
+ {
+  "type": "text",
+  "title": "Quincy"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S1_01_I__COVER.webp"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S1_08_I_2.webp"
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/S1_09_I_3.webp",
+   "media/img/S1_10_I_4.webp"
+  ]
+ },
+ {
+  "type": "text",
+  "title": "Marquis · Ozzy"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S2_01_72A_3.webp"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S2_12_I_8_COVER.webp"
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/S2_08_I_7.webp",
+   "media/img/S2_09_I_6.webp"
+  ]
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/S2_10_I_9.webp",
+   "media/img/S2_11_I_10.webp"
+  ]
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S3_09_72A_5.webp"
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/S3_07_I_11_COVER.webp",
+   "media/img/S3_08_I_13.webp"
+  ]
+ },
+ {
+  "type": "text",
+  "title": "Loungescape"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S4_01_72A_8.webp"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S4_08_I_23.webp"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S6_01_72A_10.webp"
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/S6_08_I_27.webp",
+   "media/img/S6_09_I_28.webp"
+  ]
+ },
+ {
+  "type": "text",
+  "title": "Tara · Justine"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S5_01_72A_9.webp"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S5_05_I_25.webp"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/u_brera_interior.webp"
+ },
+ {
+  "type": "video",
+  "src": "media/video/brera-tour.mp4",
+  "poster": "media/video/brera-tour_poster.jpg",
+  "portrait": true
+ },
+ {
+  "type": "video",
+  "src": "media/video/brera-cuts.mp4",
+  "poster": "media/video/brera-cuts_poster.jpg",
+  "portrait": true
+ },
+ {
+  "type": "video",
+  "src": "media/video/home-film.mp4",
+  "poster": "media/video/home-film_poster.jpg"
+ },
+ {
+  "type": "text",
+  "title": "Сант-Анджело"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/u_cloister.webp"
+ },
+ {
+  "type": "text",
+  "title": "Everett Outdoor"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S7_24_72A_11.webp"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S7_17_I_32_COVER.webp"
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/S7_13_I_31.webp",
+   "media/img/S7_14_I_30.webp"
+  ]
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/S7_15_I_33.webp",
+   "media/img/S7_16_I_34.webp"
+  ]
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/S7_18_I_36.webp",
+   "media/img/S7_19_I_37.webp"
+  ]
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/S7_20_I_35_COVER.webp",
+   "media/img/S7_21_I_38_COVER.webp"
+  ]
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/S7_22_I_39.webp",
+   "media/img/S7_23_I_40.webp"
+  ]
+ },
+ {
+  "type": "text",
+  "title": "Margherì"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S8_01_72A_15.webp"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S8_11_I_45_COVER.webp"
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/u_garden_round.webp",
+   "media/img/u_garden_daybed.webp"
+  ]
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/S8_08_I_42.webp",
+   "media/img/S8_09_I_43.webp"
+  ]
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/S8_10_I_44.webp",
+   "media/img/S8_12_I_46.webp"
+  ]
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/S8_13_I_47.webp",
+   "media/img/S8_14_I_48_COVER.webp"
+  ]
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S8_15_I_49.webp"
+ },
+ {
+  "type": "text",
+  "title": "Oasis"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S9_01_72A_18.webp"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S9_14_I_53_COVER.webp"
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/S9_11_I_52.webp",
+   "media/img/S9_12_I_51.webp"
+  ]
+ },
+ {
+  "type": "photo",
+  "src": "media/img/S9_13_I_54.webp"
+ },
+ {
+  "type": "video",
+  "src": "media/video/garden-tour.mp4",
+  "poster": "media/video/garden-tour_poster.jpg",
+  "portrait": true
+ },
+ {
+  "type": "video",
+  "src": "media/video/garden-film.mp4",
+  "poster": "media/video/garden-film_poster.jpg"
+ },
+ {
+  "type": "text",
+  "title": "Библиотека материалов"
+ },
+ {
+  "type": "video",
+  "src": "media/video/library-film.mp4",
+  "poster": "media/video/library-film_poster.jpg"
+ },
+ {
+  "type": "text",
+  "logo": true,
+  "year": "2026"
+ }
 ];
