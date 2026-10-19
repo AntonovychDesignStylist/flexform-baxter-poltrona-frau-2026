@@ -335,3 +335,5 @@ html,body{background:var(--bg)}
 /* отметка года/места под кадром */
 .photo-label{position:absolute;left:0;right:0;bottom:2.2vh;text-align:center;font-family:var(--sans);font-weight:300;
   text-transform:uppercase;letter-spacing:.24em;text-indent:.24em;color:var(--grey);font-size:clamp(9px,.7vw,12px)}
+/* ролик с переводом: поля вокруг кадра и место под титры снизу */
+.subs-below .frame.vid{inset:5vh 10vw clamp(120px,18vh,175px) 10vw}
