@@ -80,6 +80,40 @@ window.SLIDES = [
  },
  {
   "type": "text",
+  "title": "Quincy",
+  "sub": "Рекламная кампания 2026 · фото Robert Rieger"
+ },
+ {
+  "type": "photo",
+  "src": "media/img/QY_header.webp"
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/QY_g1.webp",
+   "media/img/QY_g5.webp"
+  ]
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/QY_g3.webp",
+   "media/img/QY_g7.webp"
+  ]
+ },
+ {
+  "type": "pair",
+  "src": [
+   "media/img/QY_g2.webp",
+   "media/img/QY_g6.webp"
+  ]
+ },
+ {
+  "type": "photo",
+  "src": "media/img/QY_g8.webp"
+ },
+ {
+  "type": "text",
   "title": "Marquis · Ozzy",
   "sub": "Antonio Citterio · Patrick Norguet"
  },
