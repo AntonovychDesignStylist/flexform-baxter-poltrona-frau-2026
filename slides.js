@@ -113,6 +113,20 @@ window.SLIDES = [
   "src": "media/img/QY_g8.webp"
  },
  {
+  "type": "video",
+  "src": "media/video/quincy-reel.mp4",
+  "poster": "media/video/quincy-reel_poster.jpg",
+  "portrait": true,
+  "captions": [
+   {
+    "t": 23.8,
+    "to": 27.2,
+    "who": "",
+    "ru": "Тишина — только внешне. Диван Quincy, дизайн Антонио Читтерио."
+   }
+  ]
+ },
+ {
   "type": "text",
   "title": "Marquis · Ozzy",
   "sub": "Antonio Citterio · Patrick Norguet"
